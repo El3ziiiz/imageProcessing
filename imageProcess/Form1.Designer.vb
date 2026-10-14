@@ -23,65 +23,70 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         PictureBox1 = New PictureBox()
-        Button1 = New Button()
-        RGB = New Button()
         TextBox1 = New TextBox()
+        PictureBox2 = New PictureBox()
+        ComboBox1 = New ComboBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Location = New Point(101, 266)
+        PictureBox1.Location = New Point(23, 104)
+        PictureBox1.Margin = New Padding(2, 1, 2, 1)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1180, 622)
+        PictureBox1.Size = New Size(404, 253)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(1317, 404)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(284, 122)
-        Button1.TabIndex = 1
-        Button1.Text = "loadImage"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' RGB
-        ' 
-        RGB.Location = New Point(1317, 587)
-        RGB.Name = "RGB"
-        RGB.Size = New Size(284, 122)
-        RGB.TabIndex = 2
-        RGB.Text = "RGB"
-        RGB.UseVisualStyleBackColor = True
-        ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(669, 178)
+        TextBox1.Location = New Point(50, 53)
+        TextBox1.Margin = New Padding(2, 1, 2, 1)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(546, 39)
+        TextBox1.Size = New Size(296, 23)
         TextBox1.TabIndex = 3
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Location = New Point(486, 104)
+        PictureBox2.Margin = New Padding(2, 1, 2, 1)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(411, 253)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 5
+        PictureBox2.TabStop = False
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(648, 53)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(121, 23)
+        ComboBox1.TabIndex = 6
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(13F, 32F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(2028, 1084)
+        ClientSize = New Size(918, 404)
+        Controls.Add(ComboBox1)
+        Controls.Add(PictureBox2)
         Controls.Add(TextBox1)
-        Controls.Add(RGB)
-        Controls.Add(Button1)
         Controls.Add(PictureBox1)
+        Margin = New Padding(2, 1, 2, 1)
         Name = "Form1"
         Text = "Form1"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents RGB As Button
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents ComboBox1 As ComboBox
 
 End Class
